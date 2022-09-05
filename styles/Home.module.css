@@ -1,16 +1,45 @@
-.container {
-  padding: 0 2rem;
-}
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  display: flex;
   flex: 1;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px 0px;
+}
+
+.linha {
+  width: 1px;
+  height: 40vh;
+  box-shadow: 0px 0px 8px black;
+  background-color: #eaeaea;
+}
+
+.textBox {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  justify-items: flex-start;
+  padding: 5px;
 }
+
+.description {
+  margin: 0;
+  width: 350px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: right;
+  color: #eaeaea;
+  padding: 0px 5px;
+}
+
+.title {
+  margin: 0;
+  font-size: 8rem;
+  font-weight: 700;
+  color: #eaeaea;
+}
+
 
 .footer {
   display: flex;
@@ -39,22 +68,13 @@
   text-decoration: underline;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
 
 .title,
 .description {
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
+
 
 .code {
   background: #fafafa;
@@ -106,24 +126,4 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
 }
